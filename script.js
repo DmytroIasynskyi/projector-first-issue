@@ -17,9 +17,11 @@ for (let x = 1; x <= 100; x++) {
 // 2 завдання
 
 const errorMessage = 'Таке чуство шо Бог десь наказує нас за шось';
+
 function isNumber(value) {
    return typeof value === 'number';
 }
+
 function getEvenNumbersWithFor(value) {
     if (!isNumber(value)) {
         console.log(errorMessage);
