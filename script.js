@@ -22,7 +22,7 @@ function isNumber(value) {
    return typeof value === 'number';
 }
 
-function getEvenNumbersWithFor(value) {
+function getEvenNumbersWithForLoop(value) {
     if (!isNumber(value)) {
         console.log(errorMessage);
         return;
@@ -33,7 +33,7 @@ function getEvenNumbersWithFor(value) {
     }
 }
 
-function getEvenNumbersWithWhile(value) {
+function getEvenNumbersWithWhileLoop(value) {
     if (!isNumber(value)) {
         console.log(errorMessage);
         return;
@@ -46,7 +46,7 @@ function getEvenNumbersWithWhile(value) {
     }
 }
 
-getEvenNumbersWithFor(11)
-getEvenNumbersWithFor('11')
-getEvenNumbersWithWhile(14)
-getEvenNumbersWithWhile('14')
+getEvenNumbersWithForLoop(11)
+getEvenNumbersWithForLoop('11')
+getEvenNumbersWithWhileLoop(14)
+getEvenNumbersWithWhileLoop('14')
