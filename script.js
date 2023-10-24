@@ -1,22 +1,49 @@
 "use strict";
 
 // 1 завдання
-const x = 16;
-const y = 4;
-
-console.log("Результат додавання: ", x + y);
-console.log("Результат віднімання: ", x - y);
-console.log("Результат множення : ", x * y);
-console.log("Результат ділення : ", x / y);
-console.log("Результат зведення в ступінь : ", x ** y);
-console.log("Результат знаходження квадратного кореню : ", Math.sqrt(x));
+for (let x = 1; x <= 100; x++) {
+    if (x % 3 === 0 && x % 5 === 0) {
+        console.log('ЛолКек')
+    } else if (x % 5 === 0) {
+        console.log('Кек')
+    } else if (x % 3 === 0) {
+        console.log('Лол')
+    } else {
+        console.log(x)
+    }
+}
 
 
 // 2 завдання
 
-const z = 25;
-const f = "35";
+function isNumber(value) {
+   return typeof value === 'number'
+}
+function getEvenNumbersWithFor(value) {
+    if (!isNumber(value)) {
+        console.log('Таке чуство шо Бог десь наказує нас за шось');
+        return;
+    }
 
-console.log("Результат перетворення на рядок: ", z + '');
-console.log("Результат перетворення на число: ", +f);
-console.log("Результат перетворення на булеве значення: ", !!z);
+    for (let i = 1; i < value; i++) {
+        if (i % 2 === 0) console.log(i)
+    }
+}
+
+function getEvenNumbersWithWhile(value) {
+    if (!isNumber(value)) {
+        console.log('Таке чуство шо Бог десь наказує нас за шось');
+        return;
+    }
+
+    let i = 1;
+    while (i < value) {
+        if (i % 2 === 0) console.log(i)
+        i++;
+    }
+}
+
+getEvenNumbersWithFor(11)
+getEvenNumbersWithFor('11')
+getEvenNumbersWithWhile(14)
+getEvenNumbersWithWhile('14')
