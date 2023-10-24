@@ -46,7 +46,7 @@ function getEvenNumbersWithWhileLoop(value) {
     }
 }
 
-getEvenNumbersWithForLoop(11)
-getEvenNumbersWithForLoop('11')
-getEvenNumbersWithWhileLoop(14)
-getEvenNumbersWithWhileLoop('14')
+getEvenNumbersWithForLoop(11);
+getEvenNumbersWithForLoop('11');
+getEvenNumbersWithWhileLoop(14);
+getEvenNumbersWithWhileLoop('14');
