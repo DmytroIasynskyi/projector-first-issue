@@ -25,10 +25,9 @@ console.log(recursiveOddSumTo('-10')) // error
 
 function iterativeOddSumTo(number) {
     if (typeof number !== 'number' || number < 0) return 'Please enter a positive number!';
-    if (number === 0) return 0;
     let result = 0;
-    for(let i = 1; i <= number; i++){
-        if (i % 2 !== 0) result += i;
+    for(let i = 1; i <= number; i + 2){
+      result += i;
     }
     return result;
 }
