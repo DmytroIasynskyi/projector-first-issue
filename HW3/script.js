@@ -3,7 +3,7 @@
 // 1 завдання
 
 function isPositiveNumber(number) {
-    return typeof number !== 'number' || number < 0
+    return typeof number !== 'number' || number < 0;
 }
 
 function recursiveOddSumTo(number) {
