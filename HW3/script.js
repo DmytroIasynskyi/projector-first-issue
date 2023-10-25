@@ -7,7 +7,7 @@ function recursiveOddSumTo(number) {
     if (number === 0) return 0;
     if (number === 1) return number;
     if (number % 2 !== 0) {
-        return number + recursiveOddSumTo(number - 1)
+        return number + recursiveOddSumTo(number - 2)
     } else {
         return recursiveOddSumTo(number - 1)
     }
