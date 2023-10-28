@@ -4,13 +4,13 @@
 
 const userNames = ["Петрик Ольга Іванівна", "Гнатюк Петро Антонович", "Рудко Андрій Опанасович"];
 
-let initials = [];
+let initials = userNames.map(userName => userName.split(' ').map(value => value[0] + '.').join('')).sort();
 
-userNames.forEach((name, index) => {
-    initials[index] = '';
-    name.split(' ').forEach(value => initials[index] += value[0] + '.')
-})
-initials.sort();
+// userNames.forEach((name, index) => {
+//     initials[index] = '';
+//     name.split(' ').forEach(value => initials[index] += value[0] + '.')
+// })
+// initials.sort();
 
 console.log(initials); // [ "Г.П.А.", "П.О.І.", "Р.А.О."]
 
