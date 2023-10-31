@@ -8,6 +8,7 @@ let initials = userNames
     .map(userName => userName.split(' ').map(value => value[0] + '.').join(''))
     .sort();
 
+//let initials = [];
 // userNames.forEach((name, index) => {
 //     initials[index] = '';
 //     name.split(' ').forEach(value => initials[index] += value[0] + '.')
@@ -45,6 +46,5 @@ console.log(typeof reverseMaxValue); // 'number'
 const resultsArray = [1, 2, [3, [4]]];
 let productOfArray = 1;
 resultsArray.flat(Infinity).forEach(number => productOfArray *= number);
-// тут ваш код...
 
 console.log(productOfArray); // 24
