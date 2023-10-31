@@ -45,6 +45,7 @@ console.log(typeof reverseMaxValue); // 'number'
 
 const resultsArray = [1, 2, [3, [4]]];
 let productOfArray = 1;
+
 resultsArray.flat(Infinity).forEach(number => productOfArray *= number);
 
 console.log(productOfArray); // 24
